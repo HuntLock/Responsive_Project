@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name= "viewport" content="width=device-width, initial-scale=1.0">
+    <title> Nintendo Switch</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+</head>
+<body>
+    <div class="container">
+        <div class="navbar">
+            <img src="Nintendo_Img/logo.jpg" class="logo" alt="logo">
+            <nav>
+                <ul id="menuList">
+                    <li><a href="">Game Controller</a></li>
+                    <li><a href="">Switch Lite</a></li>
+                    <li><a href="">Accessories</a></li>
+                    <li><a href="">Games</a></li>
+
+                </ul>
+            </nav>
+            <img src="Nintendo_Img/menu.png" class="menu-icon" 
+            onclick="togglemenu()">
+        </div>
+        <div class="row">
+            <div class="col-1">
+                <h2>Nintendo Switch</h2>
+                <h5>with Joy Cons</h5>
+                <h3>Take your gaming to the next level with hand-held, wireless & docked gaming</h3>
+                <p>(Blue/Red)</p>
+                <h4>$299.00</h4>
+                <button type="button">Buy Now<img src="Nintendo_Img/arrow.png"</button>
+            </div>
+            <div class="col-2">
+                <img src="Nintendo_Img/controller.png" class="controller" alt="Image of Switch Console">
+                <div class="color-box"></div>                   
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <h1> See the amazing Nintendo Switch in Action:</h1>
+        <br>
+        <div class="embed-responsive embed-responsive-16by9">
+          <iframe class="embed-responsive-item" src="Nintendo_Img/video.mp4"></iframe>
+        </div>
+      </div>
+
+      <div class="social-links">
+        <img src="Nintendo_Img/fb.png">
+        <img src="Nintendo_Img/tw.png">
+        <img src="Nintendo_Img/ig.png"
+    </div>
+
+    <script> 
+        var menuList=document.getElementById("menuList");
+        menuList.style.maxHeight="0px";
+
+        function togglemenu(){
+          if ( menuList.style.maxHeight=="0px"){
+              menuList.style.maxHeight="130px"
+          }
+
+          else{
+              menuList.style.maxHeight="0px";
+          }
+        }
+    </script>
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</body>
+
+</html>
